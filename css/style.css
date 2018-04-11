@@ -454,11 +454,12 @@ a:hover {
 
 .contact-info h2{
   margin-top: 0;
-  color: #000;
+  color: #444;
+  text-align: left;
 }
 
 .contact-info{
-  color:#000;
+  color:#444;
 }
 
 /* --- about us --- */
