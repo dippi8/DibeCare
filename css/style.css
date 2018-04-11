@@ -397,42 +397,42 @@ a:hover {
   transition:  color 300ms, background-color 300ms;
 }
 
-#partner {
-  background: url(../images/partners/partner_bg.png) 50% 50% no-repeat;
+#helpus {
+  background: url(../images/helpus.jpg) no-repeat;
+  background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
-#partner {
+#helpus {
   color: #fff;
   text-align: center;
-  padding:100px;
+  padding: 60px;
 }
 
-#partner h2 {
+#helpus h2 {
   color: #fff;
-  font-size:30px;
-  font-weight:600;
 }
 
-#partner p {
+#helpus p {
   color: #fff;
   font-size:20px;
 
 }
 
-.partners ul {
+.helpus ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.partners ul li{
+.helpus ul li{
   display: inline-block;
   float: left;
   width: 20%;
 }
 
-.partners ul li a img {
+.helpus ul li a img {
 	margin-top:50px;
 }
 
@@ -447,9 +447,9 @@ a:hover {
   font-size: 40px;
   line-height: 60px;
   color: #fff;
-  background: #000;
+  /* background: #000; */
   text-align: center;
-  border-radius: 6px;
+  /* border-radius: 6px; */
 }
 
 .contact-info h2{
@@ -706,7 +706,7 @@ ul.social-network li a {
 }
 
 .media i {
-	color:#1BBD36;
+	color: #d33865;
 	font-size:50px;
 }
 
@@ -1276,9 +1276,16 @@ hr {
 
 
 .fancy-bg {
-    background-image: url('images/ptn.png'), linear-gradient(-45deg, #f7f3f3 10%, #dce2d7 80%);
-    background-image: url('images/ptn.png'), -moz-linear-gradient(-45deg, #f7f3f3 10%, #dce2d7 80%);
-    background-image: url('images/ptn.png'), -webkit-linear-gradient(-45deg, #f7f6f3 10%, #e4e6e2 80%);
+    background-image: url(../images/ptn.png), linear-gradient(-45deg, #f7f3f3 10%, #dce2d7 80%);
+    background-image: url(../images/ptn.png), -moz-linear-gradient(-45deg, #f7f3f3 10%, #dce2d7 80%);
+    background-image: url(../images/ptn.png), -webkit-linear-gradient(-45deg, #f7f6f3 10%, #e4e6e2 80%);
     border: solid 1px rgba(0,0,0, 0.1);
     background-color: #f5f4ec;
+}
+
+#paypal-button {  
+    padding: 50px;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
 }
