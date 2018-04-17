@@ -45,13 +45,11 @@ jQuery(function($) {
 
    
    $(window).scroll(function(){
-		if ($(this).scrollTop() > 100) {
-          $('.navigation').addClass('compressed');
-           
+		if ($(this).scrollTop() > 520) {
+           $('.navigation').addClass('compressed'); 
             $('.menu').addClass('centered-menu');
         } else {
-          $('.navigation').removeClass('compressed');
-         
+        $('.navigation').removeClass('compressed');
           $('.menu').removeClass('centered-menu');
         }
     });
