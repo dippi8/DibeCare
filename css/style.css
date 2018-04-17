@@ -44,9 +44,16 @@ h3 {
 }
 
 p {
-	color:#444;
-	font-size:13px;
+	color: #6d6d6d;
+	font-size: 16px;
+	line-height: 1.6;
+    font-family: 'Raleway', serif;
 }
+
+.about p {
+	margin-top: 50px;
+}
+
 a {
     text-decoration:none;
     transition: all 0.1s ease-in-out;
@@ -113,6 +120,36 @@ a:hover {
 	background-color:#fff;
 	padding:10px;
 }
+.navbar-header{transition: all .6s;}
+
+.compressed {
+    height:auto;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.compressed .navbar-header{
+    width: 0px;
+    transition: all .6s;
+}
+
+.centered-menu{
+    float: none !important;
+    margin-top: 0 !important;
+    padding: 5px;
+    margin-left grid-auto-columns:;
+    margin-left: auto;
+    margin-right: auto;
+    /* transition: all 0.3s ease-in-out; */
+    -moz-transition: opacity 0.3s ease-in-out;
+    /* -webkit-transition: all 0.3s ease-in-out; */
+    -o-transition: all 0.3s ease-in-out;
+    /* padding-left: 300px; */
+    /* padding-right: 300px; */
+}
 
 .navbar-brand h1 {
 	margin-top:9px;
@@ -139,25 +176,55 @@ a:hover {
 	margin-top: 45px;
 	text-transform:uppercase;
 	font-weight: 200;
-}
-
-.menu ul.nav-tabs li {
-	color:#7f3636;
+	transition: all .6s;
 }
 
 .nav-tabs {
 	border-bottom: 0;
-	/* vertical-align:  middle; */
+	vertical-align:  middle;
+	/* float: none; */
 }
 .nav-tabs > li {
 	float: left;
 	margin-bottom: 0;
-    font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto Slab', serif;
+	font-weight:300;
 }
+
 .nav-tabs > li > a {
 	border-radius:0;
 	padding: 0 10px;
-	color: #444;
+	color: #808080;
+}
+
+.dropdown-menu .nav-tabs > li {
+	width: 100%;
+}
+
+.dropdown-menu .nav-tabs > li > a::after {
+	content: ">";
+	float: right;
+	position: relative;
+	bottom: 2px;
+	margin-right: 15px;
+	font-weight:300;
+	font-size:1.3em;
+	transform: scale(0.7, 1.2);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+}
+
+.dropdown-menu .nav-tabs > li > a:hover:after {
+	opacity: 1;
+}
+
+.dropdown-toggle > a {
+	border-radius:0;
+	padding: 0 10px;
+	color: #808080;
 }
 
 .nav-tabs > li > a:hover {
@@ -170,6 +237,7 @@ a:hover {
 	-webkit-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 }
+
 .nav-tabs > li > a.active {
 	color: #d73664;
 	border-radius:0;
@@ -178,6 +246,11 @@ a:hover {
 	-webkit-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	font-weight: 800;
+}
+
+ul {
+    list-style-type: none;
+    -webkit-padding-start: 10px;
 }
 
 @media (max-width: 768px) {
@@ -280,7 +353,7 @@ a:hover {
 #main-slider .carousel .slider-img{
   text-align: right;
   position: absolute;
-  bottom: -450px;
+  bottom: -490px;
   width: 80%;
 }
 
@@ -575,7 +648,7 @@ a:hover {
 
 .about {
 	background:#eee;
-	padding:50px;
+	padding: 50px;
 }
 
 .about h2 {
@@ -583,7 +656,7 @@ a:hover {
 }
 
 .about img {
-	margin-bottom:30px;
+	float: right;
 	border-radius:6px;
 }
 
@@ -1275,7 +1348,6 @@ hr {
     color: #d73664;
 }
 
-
 .fancy-bg {
     background-image: url(../images/ptn.png), linear-gradient(-45deg, #f7f3f3 10%, #dce2d7 80%);
     background-image: url(../images/ptn.png), -moz-linear-gradient(-45deg, #f7f3f3 10%, #dce2d7 80%);
@@ -1289,4 +1361,29 @@ hr {
     width: 40%;
     margin-right: auto;
     margin-left: auto;
+}
+
+.nav-tabs .dropdown-menu{
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: center top;
+    -moz-transform-origin: center top;
+    -webkit-transform-origin: center top;
+    -o-transform-origin: center top;
+    padding: 10px 0;
+    line-height: 1.8;
+    border: none;
+    font-size: 1em;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    display: block;
+}
+
+.dropdown-toggle:hover .dropdown-menu{
+    visibility: visible;
+    transform: scale(1);
+    opacity: 1;
 }

@@ -15,13 +15,14 @@
   <link href="css/style.css" rel="stylesheet" />
    
   <!-- Custom Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
     
   <!-- Paypal -->
   <script src="https://www.paypalobjects.com/api/checkout.js"></script>
     
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+  <link rel="icon" type="image/png" href="favicon.png"/>
   
 </head>
 
@@ -47,10 +48,18 @@
               <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation"><a href="index.html" class="active">Home</a></li>
                 <li role="presentation"><a href="about.html">Who we are</a></li>
-                <li role="presentation"><a href="services.html">Services</a></li>
-                <li role="presentation"><a href="portfolio.html">Events</a></li>
-                <li role="presentation"><a href="blog.html">People</a></li>
-                <li role="presentation"><a href="contact.html">Locations</a></li>
+                <li role="presentation">
+                    <div class="dropdown-toggle"><a href="services.html" href="#">What We Do</a>
+                        <div class="dropdown-menu">
+                            <ul class="nav-tabs">
+                            <li role="presentation"><a class="dropdown-item" href="#">Services</a></li>
+                            <li role="presentation"><a class="dropdown-item" href="#">Events</a></li>
+                            <li role="presentation"><a class="dropdown-item" href="#">People</a></li>
+                            <li role="presentation"><a class="dropdown-item" href="#">Locations</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
                 <li role="presentation"><a href="portfolio.html">News</a></li>
                 <li role="presentation"><a href="blog.html">Help us</a></li>
                   <li role="presentation"><a href="blog.html">FAQ</a></li>
@@ -73,7 +82,7 @@
                 <div class="carousel-content">
                   <h2 class="animation animated-item-1">Dibe<span>Care</span></h2>
                   <p class="animation animated-item-2">In order to take care of your loves, we rely also on your precious support.</p>
-                  <a class="btn-slide animation animated-item-3" href="#helpus">Help us</a>
+                  <a onclick="scroll_to('helpus')" class="btn-slide animation animated-item-3" href="#helpus">Help us</a>
                 </div>
               </div>
 
@@ -143,20 +152,13 @@
             <div class="col-sm-3 hidden-xs"><hr></div>
         </div>
         <img src="images/main-home-pict.jpg" class="img-responsive" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum erat libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque libero,
-          pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque
-        </p>
       </div>
-
       <div class="col-md-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum erat libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque libero,
-          pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum erat libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque
-            libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque
-          </p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum erat libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque
-            libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque </p>
-          <img src="images/logo.png" width="100%">
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum erat libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque libero,
+      pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque.<br>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum erat libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque libero,
+      pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque<br>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum erat libero, pulvinar tincidunt leo consectetur eget</p>
       </div>
     </div>
   </div>
@@ -290,8 +292,7 @@
       </div>
     </div>
   </footer>
-
-
+    
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="js/jquery-2.1.1.min.js"></script>
