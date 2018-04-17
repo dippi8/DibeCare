@@ -1371,6 +1371,7 @@ hr {
     -webkit-transform-origin: center top;
     -o-transform-origin: center top;
     padding: 10px 0;
+    min-width: 180px;
     line-height: 1.8;
     border: none;
     font-size: 1em;
