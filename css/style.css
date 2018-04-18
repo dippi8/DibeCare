@@ -23,7 +23,7 @@ body {
 	overflow-x:hidden;
 }
 
-hi,h2,h3,h4,h5,h6 {
+h1,h2,h3,h5,h6 {
 	color: #444;
 	line-height: 1.1em;
 	text-align:  center;
@@ -41,6 +41,14 @@ h3 {
 	font-size: 1.5em;
 	font-weight: 300;
 	text-transform: uppercase;
+}
+
+h4 {
+	font-size: 2em;
+	font-weight: 400;
+	font-family: 'Raleway', serif;
+    color: #444;
+    text-align: center;
 }
 
 p {
@@ -1446,4 +1454,9 @@ hr {
     visibility: visible;
     transform: scale(1);
     opacity: 1;
+}
+
+.people {
+    
+    padding-bottom: 150px;
 }
