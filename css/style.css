@@ -143,7 +143,9 @@ a:hover {
 }
 
 .centered-menu{
-    right: 48% !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    margin-top: 1.5% !important;
     margin-left grid-auto-columns:;
     transition: all .4s ease-in-out;
 	-moz-transition: all .4s ease-in-out;
@@ -183,12 +185,13 @@ a:hover {
 
 .menu {
 	font-size: 1em;
-	position: absolute;
+	position: relative;
 	vertical-align: inherit;
 	text-transform:uppercase;
 	font-weight: 200;
-	right: 4%;
-	top: 42%;
+	margin-left: 45%;
+	margin-right:  auto;
+	margin-top: 5%;
 	max-width: 65%;
 	transition: all .4s ease-in-out;
 	-moz-transition: all .4s ease-in-out;
