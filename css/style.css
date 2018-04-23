@@ -1595,3 +1595,8 @@ hr {
 .description h4 {
     color: #cd3a64;
 }
+
+.personal-det {
+	 max-width:350px;
+	max-height:350px;
+}
