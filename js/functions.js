@@ -90,9 +90,8 @@ jQuery(function($) {
     $("#myDropDownToggle").click(function(e){
       e.stopPropagation();
     });
-
-
 });
+
 
 function scroll_to(id) {
   $('html,body').animate({
@@ -168,4 +167,3 @@ function filterFunction() {
         }
     }
 }
-
