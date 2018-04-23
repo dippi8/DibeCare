@@ -265,7 +265,8 @@ a:hover {
 	-o-transition: all 0.4s ease-in-out;
 }
 
-.nav-tabs > li > a.active {
+.nav-tabs > li > a.active,
+.dropdown-toggle > a.active {
 	color: #d73664;
 	border-radius:0;
 	font-weight: 800;
@@ -503,7 +504,7 @@ ul {
 }
 
 .feature {
-	padding:50px;
+
 }
 
 .text-center i {
@@ -1461,18 +1462,8 @@ hr {
     padding-bottom: 150px;
 }
 
-.contain {
-    overflow: hidden;
-}
 
 .filterDiv {
-    float: left;
-    background-color: #2196F3;
-    color: #ffffff;
-    width: 100px;
-    line-height: 100px;
-    text-align: center;
-    margin: 2px;
     display: none; /* Hidden by default */
 }
 
@@ -1486,22 +1477,28 @@ hr {
 }
 
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: #444444;
     color: white;
     padding: 16px;
+    border-radius: 8px;
     font-size: 16px;
     border: none;
+
     cursor: pointer;
 }
 
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
+    background-color: #d73664;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 }
 
 #myInput {
-    border-box: box-sizing;
-    background-image: url('searchicon.png');
-    background-position: 14px 12px;
+    background-image: url('../images/search.png');
+    color: #999;
+    background-position: 180px 2px;
     background-repeat: no-repeat;
     font-size: 16px;
     padding: 14px 20px 12px 45px;
@@ -1512,18 +1509,22 @@ hr {
 #myInput:focus {outline: 3px solid #ddd;}
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+    text-align:  center;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f6f6f6;
-    min-width: 230px;
-    overflow: auto;
+    background-color: #f6f6f6bf;
+    overflow: hidden;
+    max-width: 20%;
     border: 1px solid #ddd;
-    z-index: 1;
+    z-index: 999;
+    min-width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 }
 
 .dropdown-content a {
@@ -1534,3 +1535,7 @@ hr {
 }
 
 .dropdown a:hover {background-color: #ddd}
+
+.excerpt {
+    padding:20%;
+}

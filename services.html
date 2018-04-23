@@ -26,15 +26,15 @@
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="navigation">
         <div class="container">
-          <div class="navbar-header">
+          <div class="navbar-header  col-sm-3">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.collapse">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-            <div class="navbar-brand">
-              <a href="index.html"><h1><span>Com</span>pany</h1></a>
+            <div class="navbar-brand col col-xs-5 col-sm-12">
+              <a href="index.html"><img src="images/logo.png"></a>
             </div>
           </div>
 
@@ -42,11 +42,27 @@
             <div class="menu">
               <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation"><a href="index.html">Home</a></li>
-                <li role="presentation"><a href="about.html">About Us</a></li>
-                <li role="presentation"><a href="services.html" class="active">Services</a></li>
-                <li role="presentation"><a href="portfolio.html">Portfolio</a></li>
-                <li role="presentation"><a href="blog.html">Blog</a></li>
-                <li role="presentation"><a href="contact.html">Contact</a></li>
+                <li role="presentation"><a href="about.html">Who we are</a></li>
+                <li role="presentation">
+                    <div class="dropdown-toggle hidden-xs"><a class="active" href="services.html">What We Do</a>
+                        <div class="dropdown-menu">
+                            <ul class="nav-tabs">
+                            <li role="presentation"><a class="active dropdown-item" href="#">Services</a></li>
+                            <li role="presentation"><a class="dropdown-item" href="#">Events</a></li>
+                            <li role="presentation"><a class="dropdown-item" href="#">People</a></li>
+                            <li role="presentation"><a class="dropdown-item" href="#">Locations</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                <a href="services.html" class="visible-xs" href="#">What We Do</a></li>
+                <li role="presentation"><a class="sub-mobile visible-xs" href="#">Services</a></li>
+                <li role="presentation"><a class="sub-mobile visible-xs" href="#">Events</a></li>
+                <li role="presentation"><a class="sub-mobile visible-xs" href="#">People</a></li>
+                <li role="presentation"><a class="sub-mobile visible-xs" href="#">Locations</a></li>
+                <li role="presentation"><a href="portfolio.html">News</a></li>
+                <li role="presentation"><a href="blog.html">Help us</a></li>
+                  <li role="presentation"><a href="blog.html">FAQ</a></li>
+                <li role="presentation"><a href="contact.html">Contact us</a></li>
               </ul>
             </div>
           </div>
@@ -55,17 +71,38 @@
     </nav>
   </header>
 
-  <div id="breadcrumb">
-    <div class="container">
-      <div class="breadcrumb">
-        <li><a href="index.html">Home</a></li>
-        <li>Services</li>
-      </div>
-    </div>
-  </div>
+  <section id="main-slider" class="no-margin">
+    <div class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active" style="background-image: url(images/slider/bg1.jpg)">
+          <div class="container">
+            <div class="row slide-margin">
+              <div class="col-sm-6">
+                <div class="carousel-content">
+                  <h2 class="animation animated-item-1">Dibe<span>Care</span></h2>
+                  <p class="animation animated-item-2">In order to take care of your loves, we rely also on your precious support.</p>
+                  <a onclick="scroll_to('helpus')" class="btn-slide animation animated-item-3" href="#helpus">Help us</a>
+                </div>
+              </div>
 
-  <div class="services">
-      
+              <div class="col-sm-6 hidden-xs animation animated-item-4">
+                <div class="slider-img">
+                  <img src="images/slider/img3.png" class="img-responsive">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!--/.item-->
+      </div>
+      <!--/.carousel-inner-->
+    </div>
+    <!--/.carousel-->
+  </section>
+  <!--/#main-slider-->
+
+  <div class="services">      
     <!-- Control buttons -->
     <div id="myBtnContainer">
         <div class="dropdown">
@@ -76,28 +113,85 @@
                 <a onclick="filterSelection('loc1')" href="#">Loc 1</a>
                 <a onclick="filterSelection('loc2')" href="#">Loc 2</a>
                 <a onclick="filterSelection('loc3')" href="#">Loc 3</a>
-                <a onclick="filterSelection('loc4')" href="#">Loc 4</a>
-                <a onclick="filterSelection('loc5')" href="#">Loc 5</a>
             </div>
         </div>
     </div>
+</div>
       
 
-    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-    <div class="container">
-      <div class="filterDiv loc1">Service 1</div>
-      <div class="filterDiv loc1">Service 2</div>
-      <div class="filterDiv loc1 loc2">Service 3</div>
-      <div class="filterDiv loc5">Service 4</div>
-      <div class="filterDiv loc4">Service 5</div>
-      <div class="filterDiv loc3">Service 6</div>
-      <div class="filterDiv loc3">Service 7</div>
-      <div class="filterDiv loc5">Service 8</div>
-      <div class="filterDiv loc1 loc4">Service 9</div>
-      <div class="filterDiv loc5 loc3">Service 10</div>
-      <div class="filterDiv loc2">Service 11</div>
-      <div class="filterDiv loc4">Service 12</div>
-      <div class="filterDiv loc3">Service 13</div>
+<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+<div class="container">
+        <!-- servizio -->
+    <div class="filterDiv row loc1">
+        <div class="feature">
+            <div class="container people">
+                <div class="row">
+                    <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
+                    <div class="col-sm-6 col-md-4"><h2>TEAMWORK</h2></div>
+                    <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6"><br><img src="images/services/teamwork.png" class="img-responsive" style="margin: 0 auto;">
+                    </div>
+                    <div style="display: inline" class="col-sm-12 col-md-6">
+                        <ul class="excerpt">
+                            <li><p><b>Description:</b> Different kinds of teams games</p></li>
+                            <li><p><b>Target:</b> 13+</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- location -->
+                <div class="row"><h4>Operating in:</h4>
+                </div>
+                <div class="text-center">
+                    <div class="col-md-4">
+                        <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <i class="fa fa-flask"></i>
+                            <h3>chemistry lab</h3>
+                        </div>
+                    </div> 
+                    <div class="col-md-4">
+                        <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                            <i class="fa fa-users"></i>
+                            <h3>Teamwork</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
+                            <i class="fa fa-dribbble"></i>
+                            <h3>Sports</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- people -->
+                <div class="row"><h4>Operating in:</h4></div>
+                <div class="text-center">
+                    <div class="col-md-4">
+                        <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <i class="fa fa-flask"></i>
+                            <h3>chemistry lab</h3>
+                        </div>
+                    </div> 
+                    <div class="col-md-4">
+                          <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                            <i class="fa fa-users"></i>
+                            <h3>Teamwork</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
+                            <i class="fa fa-dribbble"></i>
+                            <h3>Sports</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <div class="filterDiv row loc2">Service 2</div>
+      <div class="filterDiv row loc2">Service 3</div>
+      <div class="filterDiv row loc3">Service 4</div>
+      <div class="filterDiv row loc1">Service 5</div>
+      <div class="filterDiv row loc3">Service 6</div>
     </div>
   </div>
 
