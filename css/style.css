@@ -530,10 +530,6 @@ ul {
 
 }
 
-.feature {
-
-}
-
 .text-center i {
 	font-size:40px;
 	margin-top:70px;
@@ -1492,7 +1488,7 @@ hr {
 
 
 .filterDiv {
-    display: none; /* Hidden by default */
+    display: none;
 }
 
 /* The "show" class is added to the filtered elements */
@@ -1500,9 +1496,6 @@ hr {
     display: block;
 }
 
-.hide {
-    display: none;
-}
 
 .dropbtn {
     background-color: #444444;

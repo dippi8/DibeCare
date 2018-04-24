@@ -109,10 +109,10 @@
         <button onclick="showDropList()" id="myDropDownToggle" class="dropbtn">Search by location</button>
             <div id="myDropdown" class="dropdown-content">
                 <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-                <a class="active" onclick="filterSelection('all')" href="#">All locations</a>
-                <a onclick="filterSelection('loc1')" href="#">Loc 1</a>
-                <a onclick="filterSelection('loc2')" href="#">Loc 2</a>
-                <a onclick="filterSelection('loc3')" href="#">Loc 3</a>
+                <a class="active" onclick="filterSelection('all')">All locations</a>
+                <a onclick="filterSelection('loc1')" >Loc 1</a>
+                <a onclick="filterSelection('loc2')" >Loc 2</a>
+                <a onclick="filterSelection('loc3')" >Loc 3</a>
             </div>
         </div>
     </div>
@@ -121,289 +121,272 @@
 
 <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
 <div class="container">
-        <!-- servizio -->
-    <div class="filterDiv row loc1">
-        <div class="feature">
-            <div class="container people">
-                <div class="row">
-                    <div class="elem-header" style="background-image: url(images/services/teamwork.png)">
-                        <div class="row">
-                            <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
-                            <div class="col-sm-6 col-md-4"><h2>TEAMWORK</h2></div>
-                            <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
+    <!-- servizio -->
+        <div class="filterDiv people loc1">
+            <div class="row">
+                <div class="elem-header" style="background-image: url(images/services/teamwork.png)">
+                    <div class="row">
+                        <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
+                        <div class="col-sm-6 col-md-4"><h2>TEAMWORK</h2></div>
+                        <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center description">
+                <div class="col-sm-12 col-md-6">
+                    <h4>Description:</h4>
+                    <p>Organized games involeved in improving teamwork skills</p>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <h4>Target:</h4>
+                    <p>13+</p>
+                </div>
+            </div>
+            <hr>
+            <!-- location -->
+            <div class="description">
+                <div class="row"><h4>Located at:</h4>
+                </div>
+                <div class="row text-center">
+                    <div class="col-sm-12 col-md-4">
+                        <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <i class="fa fa-flask"></i>
+                            <h3>Location 1</h3>
+                        </div>
+                    </div> 
+                    <div class="col-sm-12 col-md-4">
+                        <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                            <i class="fa fa-users"></i>
+                            <h3>Location 2</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
+                            <i class="fa fa-dribbble"></i>
+                            <h3>Sports</h3>
                         </div>
                     </div>
                 </div>
-                <div class="row text-center description">
+            </div>
+            <hr>
+            <!-- people -->
+            <div class="description">
+                <div class="row"><h4>Supervisors:</h4></div>
+                <div class="row text-center">
                     <div class="col-sm-12 col-md-6">
-                        <h4>Description:</h4>
-                        <p>Organized games involeved in improving teamwork skills</p>
-                    </div>
+                        <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <i class="fa fa-flask"></i>
+                            <h3>Lollo</h3>
+                        </div>
+                    </div> 
                     <div class="col-sm-12 col-md-6">
-                        <h4>Target:</h4>
-                        <p>13+</p>
-                    </div>
-                </div>
-                <hr>
-                <!-- location -->
-                <div class="description">
-                    <div class="row"><h4>Located at:</h4>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-sm-12 col-md-4">
-                            <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-                                <i class="fa fa-flask"></i>
-                                <h3>Location 1</h3>
-                            </div>
-                        </div> 
-                        <div class="col-sm-12 col-md-4">
-                            <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                                <i class="fa fa-users"></i>
-                                <h3>Location 2</h3>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-4">
-                            <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
-                                <i class="fa fa-dribbble"></i>
-                                <h3>Sports</h3>
-                            </div>
+                          <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                            <i class="fa fa-users"></i>
+                            <h3>Dippi</h3>
                         </div>
                     </div>
                 </div>
-                <hr>
+            </div>
+        </div> 
+        <div class="filterDiv loc2 people">
+            <div class="row">
+                <div class="elem-header" style="background-image: url(images/services/chess.png)">
+                    <div class="row">
+                        <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
+                        <div class="col-sm-6 col-md-4"><h2>CHESS</h2></div>
+                        <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center description">
+                <div class="col-sm-12 col-md-6">
+                    <h4>Description:</h4>
+                    <p>Organized games involeved in improving teamwork skills</p>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <h4>Target:</h4>
+                    <p>13+</p>
+                </div>
+            </div>
+            <hr>
+            <!-- location -->
+            <div class="description">
+                <div class="row"><h4>Located at:</h4>
+                </div>
+                <div class="row text-center">
+                    <div class="col-sm-12 col-md-4">
+                        <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <i class="fa fa-flask"></i>
+                            <h3>Location 1</h3>
+                        </div>
+                    </div> 
+                    <div class="col-sm-12 col-md-4">
+                        <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                            <i class="fa fa-users"></i>
+                            <h3>Location 2</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
+                            <i class="fa fa-dribbble"></i>
+                            <h3>Sports</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
                 <!-- people -->
-                <div class="description">
-                    <div class="row"><h4>Supervisors:</h4></div>
-                    <div class="row text-center">
-                        <div class="col-sm-12 col-md-6">
-                            <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-                                <i class="fa fa-flask"></i>
-                                <h3>Lollo</h3>
-                            </div>
-                        </div> 
-                        <div class="col-sm-12 col-md-6">
-                              <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                                <i class="fa fa-users"></i>
-                                <h3>Dippi</h3>
-                            </div>
+            <div class="description">
+                <div class="row"><h4>Supervisors:</h4></div>
+                <div class="row text-center">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <i class="fa fa-flask"></i>
+                            <h3>Lollo</h3>
+                        </div>
+                    </div> 
+                    <div class="col-sm-12 col-md-6">
+                          <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                            <i class="fa fa-users"></i>
+                            <h3>Dippi</h3>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-      <div class="filterDiv row loc2">
-          <div class="feature">
-            <div class="container people">
-                <div class="row">
-                    <div class="elem-header" style="background-image: url(images/services/chess.png)">
-                        <div class="row">
-                            <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
-                            <div class="col-sm-6 col-md-4"><h2>CHESS</h2></div>
-                            <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
+        <div class="filterDiv people loc3">
+            <div class="row">
+                <div class="elem-header" style="background-image: url(images/services/theater.png)">
+                    <div class="row">
+                        <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
+                        <div class="col-sm-6 col-md-4"><h2>THEATER</h2></div>
+                        <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center description">
+                <div class="col-sm-12 col-md-6">
+                    <h4>Description:</h4>
+                    <p>Organized games involeved in improving teamwork skills</p>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <h4>Target:</h4>
+                    <p>13+</p>
+                </div>
+            </div>
+            <hr>
+            <!-- location -->
+            <div class="description">
+                <div class="row"><h4>Located at:</h4>
+                </div>
+                <div class="row text-center">
+                    <div class="col-sm-12 col-md-4">
+                        <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <i class="fa fa-flask"></i>
+                            <h3>Location 1</h3>
+                        </div>
+                    </div> 
+                    <div class="col-sm-12 col-md-4">
+                        <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                            <i class="fa fa-users"></i>
+                            <h3>Location 2</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
+                            <i class="fa fa-dribbble"></i>
+                            <h3>Sports</h3>
                         </div>
                     </div>
                 </div>
-                <div class="row text-center description">
+            </div>
+            <hr>
+            <!-- people -->
+            <div class="description">
+                <div class="row"><h4>Supervisors:</h4></div>
+                <div class="row text-center">
                     <div class="col-sm-12 col-md-6">
-                        <h4>Description:</h4>
-                        <p>Organized games involeved in improving teamwork skills</p>
-                    </div>
+                        <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <i class="fa fa-flask"></i>
+                            <h3>Lollo</h3>
+                        </div>
+                    </div> 
                     <div class="col-sm-12 col-md-6">
-                        <h4>Target:</h4>
-                        <p>13+</p>
-                    </div>
-                </div>
-                <hr>
-                <!-- location -->
-                <div class="description">
-                    <div class="row"><h4>Located at:</h4>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-sm-12 col-md-4">
-                            <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-                                <i class="fa fa-flask"></i>
-                                <h3>Location 1</h3>
-                            </div>
-                        </div> 
-                        <div class="col-sm-12 col-md-4">
-                            <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                                <i class="fa fa-users"></i>
-                                <h3>Location 2</h3>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-4">
-                            <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
-                                <i class="fa fa-dribbble"></i>
-                                <h3>Sports</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <!-- people -->
-                <div class="description">
-                    <div class="row"><h4>Supervisors:</h4></div>
-                    <div class="row text-center">
-                        <div class="col-sm-12 col-md-6">
-                            <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-                                <i class="fa fa-flask"></i>
-                                <h3>Lollo</h3>
-                            </div>
-                        </div> 
-                        <div class="col-sm-12 col-md-6">
-                              <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                                <i class="fa fa-users"></i>
-                                <h3>Dippi</h3>
-                            </div>
+                          <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                            <i class="fa fa-users"></i>
+                            <h3>Dippi</h3>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-      </div>
-      <div class="filterDiv row loc3">
-        <div class="feature">
-            <div class="container people">
-                <div class="row">
-                    <div class="elem-header" style="background-image: url(images/services/theater.png)">
-                        <div class="row">
-                            <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
-                            <div class="col-sm-6 col-md-4"><h2>THEATER</h2></div>
-                            <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
+        <div class="filterDiv loc1 people">
+            <div class="row">
+                <div class="elem-header" style="background-image: url(images/services/sport.png)">
+                    <div class="row">
+                        <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
+                        <div class="col-sm-6 col-md-4"><h2>SPORT</h2></div>
+                        <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center description">
+                <div class="col-sm-12 col-md-6">
+                    <h4>Description:</h4>
+                    <p>Organized games involeved in improving teamwork skills</p>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <h4>Target:</h4>
+                    <p>13+</p>
+                </div>
+            </div>
+            <hr>
+            <!-- location -->
+            <div class="description">
+                <div class="row"><h4>Located at:</h4>
+                </div>
+                <div class="row text-center">
+                    <div class="col-sm-12 col-md-4">
+                        <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <i class="fa fa-flask"></i>
+                            <h3>Location 1</h3>
+                        </div>
+                    </div> 
+                    <div class="col-sm-12 col-md-4">
+                        <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                            <i class="fa fa-users"></i>
+                            <h3>Location 2</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
+                            <i class="fa fa-dribbble"></i>
+                            <h3>Sports</h3>
                         </div>
                     </div>
                 </div>
-                <div class="row text-center description">
+            </div>
+            <hr>
+            <!-- people -->
+            <div class="description">
+                <div class="row"><h4>Supervisors:</h4></div>
+                <div class="row text-center">
                     <div class="col-sm-12 col-md-6">
-                        <h4>Description:</h4>
-                        <p>Organized games involeved in improving teamwork skills</p>
-                    </div>
+                        <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <i class="fa fa-flask"></i>
+                            <h3>Lollo</h3>
+                        </div>
+                    </div> 
                     <div class="col-sm-12 col-md-6">
-                        <h4>Target:</h4>
-                        <p>13+</p>
-                    </div>
-                </div>
-                <hr>
-                <!-- location -->
-                <div class="description">
-                    <div class="row"><h4>Located at:</h4>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-sm-12 col-md-4">
-                            <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-                                <i class="fa fa-flask"></i>
-                                <h3>Location 1</h3>
-                            </div>
-                        </div> 
-                        <div class="col-sm-12 col-md-4">
-                            <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                                <i class="fa fa-users"></i>
-                                <h3>Location 2</h3>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-4">
-                            <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
-                                <i class="fa fa-dribbble"></i>
-                                <h3>Sports</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <!-- people -->
-                <div class="description">
-                    <div class="row"><h4>Supervisors:</h4></div>
-                    <div class="row text-center">
-                        <div class="col-sm-12 col-md-6">
-                            <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-                                <i class="fa fa-flask"></i>
-                                <h3>Lollo</h3>
-                            </div>
-                        </div> 
-                        <div class="col-sm-12 col-md-6">
-                              <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                                <i class="fa fa-users"></i>
-                                <h3>Dippi</h3>
-                            </div>
+                          <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                            <i class="fa fa-users"></i>
+                            <h3>Dippi</h3>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-      <div class="filterDiv row loc1">
-        <div class="feature">
-            <div class="container people">
-                <div class="row">
-                    <div class="elem-header" style="background-image: url(images/services/sport.png)">
-                        <div class="row">
-                            <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
-                            <div class="col-sm-6 col-md-4"><h2>SPORT</h2></div>
-                            <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row text-center description">
-                    <div class="col-sm-12 col-md-6">
-                        <h4>Description:</h4>
-                        <p>Organized games involeved in improving teamwork skills</p>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <h4>Target:</h4>
-                        <p>13+</p>
-                    </div>
-                </div>
-                <hr>
-                <!-- location -->
-                <div class="description">
-                    <div class="row"><h4>Located at:</h4>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-sm-12 col-md-4">
-                            <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-                                <i class="fa fa-flask"></i>
-                                <h3>Location 1</h3>
-                            </div>
-                        </div> 
-                        <div class="col-sm-12 col-md-4">
-                            <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                                <i class="fa fa-users"></i>
-                                <h3>Location 2</h3>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-4">
-                            <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
-                                <i class="fa fa-dribbble"></i>
-                                <h3>Sports</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <!-- people -->
-                <div class="description">
-                    <div class="row"><h4>Supervisors:</h4></div>
-                    <div class="row text-center">
-                        <div class="col-sm-12 col-md-6">
-                            <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-                                <i class="fa fa-flask"></i>
-                                <h3>Lollo</h3>
-                            </div>
-                        </div> 
-                        <div class="col-sm-12 col-md-6">
-                              <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                                <i class="fa fa-users"></i>
-                                <h3>Dippi</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
 
   <footer>
     <div class="footer">
