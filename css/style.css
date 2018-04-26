@@ -89,7 +89,7 @@ a:hover {
 }
 
 .text-center p {
-	margin-bottom:50px;
+	/* margin-bottom:50px; */
 	color:#333;
 }
 
@@ -843,11 +843,6 @@ ul.social-network li a {
 	border-radius:6px;
 }
 
-.services p {
-	margin-top:30px;
-	font-size:13px;
-}
-
 .sub-services {
 	padding:50px;
 	background:#ddd;
@@ -1562,6 +1557,7 @@ hr {
 }
 
 .elem-header {
+    margin-bottom: 40px;
     padding:10%;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -1578,7 +1574,7 @@ hr {
 }
 
 .description {
-    padding:50px;
+    padding: 20px;
 }
 
 .sep {
@@ -1590,6 +1586,21 @@ hr {
 }
 
 .personal-det {
-	 max-width:350px;
+    max-width:350px;
 	max-height:350px;
 }
+
+.page-header {
+    margin-top: 140px !important; 
+}
+
+.page-header .slide-margin{
+    padding: 20% !important; 
+}
+
+.page-header h1{
+    font-size: 5em;
+    text-shadow: -2px 3px 2px rgba(0,0,0,0.15);
+    color: #fff;
+}
+
