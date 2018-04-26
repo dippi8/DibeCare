@@ -1478,7 +1478,7 @@ hr {
 
 .people {
     
-    padding-bottom: 150px;
+padding-bottom: 100px;
 }
 
 
@@ -1582,7 +1582,7 @@ hr {
 }
 
 .description h4 {
-    color: #cd3a64;
+    color: #444;
 }
 
 .personal-det {
@@ -1605,5 +1605,12 @@ hr {
 }
 
 .circle {
-    clip-path: circle(30px at 35px 35px);
+    clip-path: circle();
+    max-width: 440px;
+    margin: 10px 0;
+}
+
+.img-people {
+    max-width: 220px;
+    margin: 10px 0;
 }
