@@ -37,10 +37,11 @@ h2 {
 }
 
 h3 {
-	color:#d73664;
+	color: #444;
 	font-size: 1.5em;
+	text-transform:  uppercase;
 	font-weight: 300;
-	text-transform: uppercase;
+	font-family: 'Raleway';
 }
 
 h4 {
@@ -1565,6 +1566,15 @@ padding-bottom: 100px;
     background-position: center center;
 }
 
+
+.elem-header:hover{
+    opacity: 0.7;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+}
+
+
 .elem-header h2{
     color: #fff;
 }
@@ -1582,7 +1592,7 @@ padding-bottom: 100px;
 }
 
 .description h4 {
-    color: #444;
+    color: #d73664;
 }
 
 .personal-det {
