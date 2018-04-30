@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dibecare</title>
+  <title>Company-HTML Bootstrap theme</title>
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -13,17 +13,12 @@
   <link rel="stylesheet" href="css/animate.css">
   <link href="css/prettyPhoto.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" />
-   
-  <!-- Custom Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
-    
-  <!-- Paypal -->
-  <script src="https://www.paypalobjects.com/api/checkout.js"></script>
-    
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-  
+  <!-- =======================================================
+    Theme Name: Company
+    Theme URL: https://bootstrapmade.com/company-free-html-bootstrap-template/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
 </head>
 
 <body>
@@ -31,7 +26,7 @@
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="navigation">
         <div class="container">
-          <div class="navbar-header  col-sm-3">
+          <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.collapse">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
@@ -39,31 +34,19 @@
 							<span class="icon-bar"></span>
 						</button>
             <div class="navbar-brand">
-              <a href="index.html"><img src="images/logo.png"></a>
+              <a href="index.html"><h1><span>Com</span>pany</h1></a>
             </div>
           </div>
 
           <div class="navbar-collapse collapse">
             <div class="menu">
               <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation"><a href="index.html" class="active">Home</a></li>
-                <li role="presentation"><a href="about.html">Who we are</a></li>
-                <li role="presentation">
-                    <div class="dropdown-toggle"><a href="services.html" href="#">What We Do</a>
-                        <div class="dropdown-menu">
-                            <ul class="nav-tabs">
-                            <li role="presentation"><a class="dropdown-item" href="#">Services</a></li>
-                            <li role="presentation"><a class="dropdown-item" href="#">Events</a></li>
-                            <li role="presentation"><a class="dropdown-item" href="#">People</a></li>
-                            <li role="presentation"><a class="dropdown-item" href="#">Locations</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <li role="presentation"><a href="portfolio.html">News</a></li>
-                <li role="presentation"><a href="blog.html">Help us</a></li>
-                  <li role="presentation"><a href="blog.html">FAQ</a></li>
-                <li role="presentation"><a href="contact.html">Contact us</a></li>
+                <li role="presentation"><a href="index.html">Home</a></li>
+                <li role="presentation"><a href="about.html">About Us</a></li>
+                <li role="presentation"><a href="services.html">Services</a></li>
+                <li role="presentation"><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li role="presentation"><a href="blog.html">Blog</a></li>
+                <li role="presentation"><a href="contact.html">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -72,97 +55,99 @@
     </nav>
   </header>
 
-  <section id="main-slider" class="no-margin">
-    <div class="carousel slide">
-      <div class="carousel-inner">
-        <div class="item active" style="background-image: url(images/slider/bg1.jpg)">
-          <div class="container">
-            <div class="row slide-margin"> 
-              <div class="col-sm-6">
-                <div class="carousel-content">
-                  <h2 class="animation animated-item-1">Dibe<span>Care</span></h2>
-                  <p class="animation animated-item-2">In order to take care of your loves, we rely also on your precious support.</p>
-                  <a onclick="scroll_to('helpus')" class="btn-slide animation animated-item-3" href="#helpus">Help us</a>
+  <div id="breadcrumb">
+    <div class="container">
+      <div class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li>Portfolio</li>
+      </div>
+    </div>
+  </div>
+
+  <section id="portfolio">
+    <div class="container">
+      <div class="center">
+        <p>Here are our upcoming events, click to find out more</p>
+      </div>
+
+      <!--/#portfolio-filter-->
+    </div>
+      
+    <div class="container">
+      <div class="">
+        <div class="portfolio-items">
+            
+          <!-- singolo elemento -->
+          <div class="portfolio-item apps col-xs-12 col-sm-4 col-md-3">
+            <div class="recent-work-wrap">
+              <img class="img-responsive" src="images/chess_tournament.jpeg" alt="">
+              <div class="overlay">
+                <div class="recent-work-inner">
+                  <h3><a href="#">Chess Tournament</a></h3>
+                  <p>knockout chess tournament at location A</p>
                 </div>
               </div>
-
-              <div class="col-sm-6 hidden-xs animation animated-item-4">
-                <div class="slider-img">
-                  <img src="images/slider/img3.png" class="img-responsive">
-                </div>
-              </div>
-
             </div>
           </div>
-        </div>
-        <!--/.item-->
-      </div>
-      <!--/.carousel-inner-->
-    </div>
-    <!--/.carousel-->
-  </section>
-  <!--/#main-slider-->
+            
+          <!-- singolo elemento -->
+          <div class="portfolio-item apps col-xs-12 col-sm-4 col-md-3">
+            <div class="recent-work-wrap">
+              <img class="img-responsive" src="images/guitar_essay.jpeg" alt="">
+              <div class="overlay">
+                <div class="recent-work-inner">
+                  <h3><a href="#">guitar Essay</a></h3>
+                  <p>Final show where our students will play the songs they have learned</p>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+          <!-- singolo elemento -->
+          <div class="portfolio-item apps col-xs-12 col-sm-4 col-md-3">
+            <div class="recent-work-wrap">
+              <img class="img-responsive" src="images/theater.jpeg" alt="">
+              <div class="overlay">
+                <div class="recent-work-inner">
+                  <h3><a href="#">Final Show</a></h3>
+                  <p>Interpretation of the story of peter pan</p>
+                </div>
+              </div>
+            </div>
+          </div>
+                    
+          <!-- singolo elemento -->
+          <div class="portfolio-item apps col-xs-12 col-sm-4 col-md-3">
+            <div class="recent-work-wrap">
+              <img class="img-responsive" src="images/chess_tournament.jpeg" alt="">
+              <div class="overlay">
+                <div class="recent-work-inner">
+                  <h3><a href="#">Risiko day</a></h3>
+                  <p>A whole day dedicated to the game of risiko</p>
+                </div>
+              </div>
+            </div>
+          </div>
+                    
+          <!-- singolo elemento -->
+          <div class="portfolio-item apps col-xs-12 col-sm-4 col-md-3">
+            <div class="recent-work-wrap">
+              <img class="img-responsive" src="images/services/sport.png" alt="">
+              <div class="overlay">
+                <div class="recent-work-inner">
+                  <h3><a href="#">Football Match</a></h3>
+                  <p>Two teams composed of our students will compete in an exciting football match</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-  <div class="feature">
-	  
-    <!-- questo è un blocco relativo a un evento -->
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
-            <div class="col-sm-6 col-md-4"><h2>Guitar Essay</h2></div>
-            <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
         </div>
-		
-		<div class="row">
-			<div class="col-sm-12 col-md-6"><br><img src="images/guitar_essay.jpeg" class="img-responsive" style="margin: 0 auto;"></div>
-			<div class="col-sm-12 col-md-6">
-				<ul class='excerpt'>
-					<li><p><b>Related service:</b><a href="/link al servizio"> Guitar Lab</a></p></li>
-					<li><p><b>Location:</b><a href="/link alla location"> nome location</a></p></li>
-					<li><p><b>Date:</b> 22 June 2018 at 18:00</p></li>
-				</ul></div>
-		</div>
+      </div>
     </div>
-	  
-	<!-- questo è un blocco relativo a un evento -->
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
-            <div class="col-sm-6 col-md-4"><h2>Chess Tournament</h2></div>
-            <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
-        </div>
-		
-		<div class="row">
-			<div class="col-sm-12 col-md-6"><br><img src="images/chess_tournament.jpeg" class="img-responsive" style="margin: 0 auto;"></div>
-			<div class="col-sm-12 col-md-6">
-				<ul class='excerpt'>
-					<li><p><b>Related service:</b><a href="/link al servizio"> Table games</a></p></li>
-					<li><p><b>Location:</b><a href="/link alla location"> nome location</a></p></li>
-					<li><p><b>Date:</b> 27 June 2018 at 14:30</p></li>
-				</ul></div>
-		</div>
-    </div>
-	  
-	<!-- questo è un blocco relativo a un evento -->
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
-            <div class="col-sm-6 col-md-4"><h2>Final Show</h2></div>
-            <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
-        </div>
-		
-		<div class="row">
-			<div class="col-sm-12 col-md-6"><br><img src="images/theater.jpeg" class="img-responsive" style="margin: 0 auto;"></div>
-			<div class="col-sm-12 col-md-6">
-				<ul class='excerpt'>
-					<li><p><b>Related service:</b><a href="/link al servizio"> Theater Lab</a></p></li>
-					<li><p><b>Location:</b><a href="/link alla location"> nome location</a></p></li>
-					<li><p><b>Date:</b> 1 July 2018 at 18:00</p></li>
-				</ul></div>
-		</div>
-    </div>
-	  
-  </div>
+  </section>
+  <!--/#portfolio-item-->
+
 
   <footer>
     <div class="footer">
@@ -181,17 +166,24 @@
 
         <div class="col-md-4 col-md-offset-4">
           <div class="copyright">
-            &copy; Dibecare. All Rights Reserved.
+            &copy; Company Theme. All Rights Reserved.
+            <div class="credits">
+              <!--
+                All the links in the footer should remain intact.
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Company
+              -->
+              <a href="https://bootstrapmade.com/bootstrap-business-templates/">Bootstrap Business Templates</a> by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
           </div>
         </div>
       </div>
-
       <div class="pull-right">
         <a href="#home" class="scrollup"><i class="fa fa-angle-up fa-3x"></i></a>
       </div>
     </div>
   </footer>
-    
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="js/jquery-2.1.1.min.js"></script>
