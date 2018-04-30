@@ -105,13 +105,13 @@ a:hover {
 }
 
 #breadcrumb {
-	background-color: #1BBD36;
-	margin-top: -20px;
+	background-color: #d73664;
+	margin-top: 55px;
 }
 
 .breadcrumb {
   list-style: none;
-  background-color: #1BBD36;
+  background-color: rgba(0,0,0,0);
   border-radius: 0px;
   padding:3px 10px;
 }
@@ -119,9 +119,13 @@ a:hover {
 .breadcrumb li {
    text-transform:uppercase;
    margin-top:125px;
-   font-weight:600;
+   font-weight: 900;
 }
 
+.breadcrumb a{
+    color: #fff;
+    font-weight: 100;
+}
 /*===========================
   Menu and Navigation
 ============================ */
@@ -634,7 +638,8 @@ ul {
 
 .aboutus h3 {
 	margin-bottom:30px;
-	font-weight:800;
+	font-weight: 600;
+	text-align: left;
 }
 
 .aboutus h4 {
@@ -642,6 +647,8 @@ ul {
 	margin-bottom:30px;
 	font-weight:700;
 }
+
+
 
 .skill h2{
 	margin-top:-10px;
@@ -1649,4 +1656,11 @@ padding-bottom: 100px;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
+}
+
+.info {
+    
+position: relative;
+    
+margin-top: 20%;
 }

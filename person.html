@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Company-HTML Bootstrap theme</title>
+  <title>Dibecare | Lollo</title>
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -13,28 +13,28 @@
   <link rel="stylesheet" href="css/animate.css">
   <link href="css/prettyPhoto.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" />
-  <!-- =======================================================
-    Theme Name: Company
-    Theme URL: https://bootstrapmade.com/company-free-html-bootstrap-template/
-    Author: BootstrapMade
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
+  
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+    
+    
 </head>
 
 <body>
-  <header>
+    <header>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="navigation">
         <div class="container">
-          <div class="navbar-header">
+          <div class="navbar-header  col-sm-3">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.collapse">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-            <div class="navbar-brand">
-              <a href="index.html"><h1><span>Com</span>pany</h1></a>
+            <div class="navbar-brand col col-xs-5 col-sm-12">
+              <a href="index.html"><img src="images/logo.png"></a>
             </div>
           </div>
 
@@ -42,11 +42,27 @@
             <div class="menu">
               <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation"><a href="index.html">Home</a></li>
-                <li role="presentation"><a href="about.html" class="active">About Us</a></li>
-                <li role="presentation"><a href="services.html">Services</a></li>
-                <li role="presentation"><a href="portfolio.html">Portfolio</a></li>
-                <li role="presentation"><a href="blog.html">Blog</a></li>
-                <li role="presentation"><a href="contact.html">Contact</a></li>
+                <li role="presentation"><a href="about.html">Who we are</a></li>
+                <li role="presentation">
+                    <div class="dropdown-toggle hidden-xs"><a class="active" href="services.html">What We Do</a>
+                        <div class="dropdown-menu">
+                            <ul class="nav-tabs">
+                            <li role="presentation"><a class="active dropdown-item" href="#">Services</a></li>
+                            <li role="presentation"><a class="dropdown-item" href="#">Events</a></li>
+                            <li role="presentation"><a class="dropdown-item" href="#">People</a></li>
+                            <li role="presentation"><a class="dropdown-item" href="#">Locations</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                <a href="services.html" class="visible-xs" href="#">What We Do</a></li>
+                <li role="presentation"><a class="sub-mobile visible-xs" href="#">Services</a></li>
+                <li role="presentation"><a class="sub-mobile visible-xs" href="#">Events</a></li>
+                <li role="presentation"><a class="sub-mobile visible-xs" href="#">People</a></li>
+                <li role="presentation"><a class="sub-mobile visible-xs" href="#">Locations</a></li>
+                <li role="presentation"><a href="portfolio.html">News</a></li>
+                <li role="presentation"><a href="blog.html">Help us</a></li>
+                  <li role="presentation"><a href="blog.html">FAQ</a></li>
+                <li role="presentation"><a href="contact.html">Contact us</a></li>
               </ul>
             </div>
           </div>
@@ -54,19 +70,20 @@
       </div>
     </nav>
   </header>
-	
+    
   <div id="breadcrumb">
     <div class="container">
       <div class="breadcrumb">
         <li><a href="index.html">Home</a></li>
-        <li>About Us</li>
+        <li><a href="people.html">People</a></li>
+        <li>Lollo</li>
       </div>
     </div>
   </div>
-
+    
   <div class="aboutus">
     <div class="container">
-      <h3>Person informations</h3>
+      <h2>Lollo</h2>
       <hr>
       <div class="col-md-7 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
         <img src="images/lore.png" class="img-responsive">
@@ -76,14 +93,13 @@
         <p>In neque lectus, lobortis a varius a, hendrerit eget dolor. Fusce scelerisque, sem ut viverra sollicitudin, est turpis blandit lacus, in pretium lectus sapien at est. Integer pretium ipsum sit amet dui feugiat vitae dapibus odio eleifend.</p>
       </div>
       <div class="col-md-5 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-        <div class="skill">
-		  <ul>
-			<li><h4>Name:</h4><h3> Lorenzo</h3></li>
-			<li><h4>Last name:</h4><h3> Cannone</h3></li>
-			<li><h4>Date of birth:</h4><h3> 22 June 1992</h3></li>
-			<li><h4><a href="CV/cv_MatteoDiPierro.pdf">CV</a></h4></li>
+		  <ul class="info">
+			<li><p>Name:</p><h3>Lorenzo Cannone</h3></li>
+			<li><p>Date of birth:</p><h3>22 June 1992</h3></li>
+            <li><p>CV:</p></li>
+			<li><a href="CV/cv_MatteoDiPierro.pdf"><i class="fa fa-file-o fa-2x" aria-hidden="true"></i></a></li>
 		  </ul>
-
+            <div class="skill">
           <div class="progress-wrap excerpt">
             <h4>Years of experience</h4>
             <div class="progress">
