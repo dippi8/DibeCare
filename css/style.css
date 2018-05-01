@@ -779,6 +779,10 @@ ul {
 	
 }
 
+.plain-bg {
+    background-color: #fff;
+}
+
 .fancy-bg img,
 .plain-bg img{
 	border-radius:6px;
