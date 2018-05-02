@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Company-HTML Bootstrap theme</title>
+  <title>Dibecare | Openday</title>
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -13,28 +13,29 @@
   <link rel="stylesheet" href="css/animate.css">
   <link href="css/prettyPhoto.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" />
-  <!-- =======================================================
-    Theme Name: Company
-    Theme URL: https://bootstrapmade.com/company-free-html-bootstrap-template/
-    Author: BootstrapMade
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
+  
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+    
+    
 </head>
 
 <body>
-  <header>
+    
+    <header>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="navigation">
         <div class="container">
-          <div class="navbar-header">
+          <div class="navbar-header  col-sm-3">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.collapse">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-            <div class="navbar-brand">
-              <a href="index.html"><h1><span>Com</span>pany</h1></a>
+            <div class="navbar-brand col col-xs-5 col-sm-12">
+              <a href="index.html"><img src="images/logo.png"></a>
             </div>
           </div>
 
@@ -42,11 +43,27 @@
             <div class="menu">
               <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation"><a href="index.html">Home</a></li>
-                <li role="presentation"><a href="about.html" class="active">About Us</a></li>
-                <li role="presentation"><a href="services.html">Services</a></li>
-                <li role="presentation"><a href="portfolio.html">Portfolio</a></li>
-                <li role="presentation"><a href="blog.html">Blog</a></li>
-                <li role="presentation"><a href="contact.html">Contact</a></li>
+                <li role="presentation"><a href="about.html">Who we are</a></li>
+                <li role="presentation">
+                    <div class="dropdown-toggle hidden-xs"><a class="active" href="services.html">What We Do</a>
+                        <div class="dropdown-menu">
+                            <ul class="nav-tabs">
+                            <li role="presentation"><a class="active dropdown-item" href="#">Services</a></li>
+                            <li role="presentation"><a class="dropdown-item" href="#">Events</a></li>
+                            <li role="presentation"><a class="dropdown-item" href="#">People</a></li>
+                            <li role="presentation"><a class="dropdown-item" href="#">Locations</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                <a href="services.html" class="visible-xs" href="#">What We Do</a></li>
+                <li role="presentation"><a class="sub-mobile visible-xs" href="#">Services</a></li>
+                <li role="presentation"><a class="sub-mobile visible-xs" href="#">Events</a></li>
+                <li role="presentation"><a class="sub-mobile visible-xs" href="#">People</a></li>
+                <li role="presentation"><a class="sub-mobile visible-xs" href="#">Locations</a></li>
+                <li role="presentation"><a href="portfolio.html">News</a></li>
+                <li role="presentation"><a href="blog.html">Help us</a></li>
+                  <li role="presentation"><a href="blog.html">FAQ</a></li>
+                <li role="presentation"><a href="contact.html">Contact us</a></li>
               </ul>
             </div>
           </div>
@@ -54,54 +71,73 @@
       </div>
     </nav>
   </header>
-	
+    
   <div id="breadcrumb">
     <div class="container">
       <div class="breadcrumb">
         <li><a href="index.html">Home</a></li>
-        <li>About Us</li>
+        <li><a href="people.html">Events</a></li>
+        <li id="event-name">Dibecare Openday</li>
       </div>
     </div>
   </div>
-
-  <div class="people">
     
-		<div class="row">
-			<div class="elem-header" style="background-image: url(images/services/chess.png)">
-				<div class="row">
-					<div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
-					<div class="col-sm-6 col-md-4"><h2>CHESS TOURNAMENT</h2></div>
-					<div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
-				</div>
-			</div>
-		</div>
-    
-  </div>
-    <div class="container">
-        <div class="row text-center description">
-            <p>Nam tempor velit sed turpis imperdiet vestibulum. In mattis leo ut sapien euismod id feugiat mauris euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus id nulla risus, vel tincidunt
-            turpis. Aliquam a nulla mi, placerat blandit eros. </p>
-            <p>In neque lectus, lobortis a varius a, hendrerit eget dolor. Fusce scelerisque, sem ut viverra sollicitudin, est turpis blandit lacus, in pretium lectus sapien at est. Integer pretium ipsum sit amet dui feugiat vitae dapibus odio eleifend.</p>
-        </div>
+    <!-- LIGHTBOX -->
+    <div class="lightbox-target" id="img">
+        <img src="images/openday-flyer.jpg"/>
+        <a class="lightbox-close" href="#"></a>
     </div>
-	
-  <div class="row text-center description">
-	<div class="col-sm-12 col-md-4">
-		<h4>Loacation:</h4>
-		<p>link location</p>
-	</div>
-	<div class="col-sm-12 col-md-4">
-		<h4>Related service:</h4>
-		<p>link service</p>
-	</div>
-	<div class="col-sm-12 col-md-4">
-		<h4>Date:</h4>
-		<p>27 June 2018 at 14:30</p>
-	</div>
+    
+  <div class="aboutus">
+    <div class="container">
+        
+      <h2>Dibecare Openday</h2>
+      <hr>
+        <div class="row">
+      <div class="col-xs-12 col-sm-7 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <div class="text-center">
+              <a class="lightbox" href="#img"><img src="images/openday-flyer.jpg"/></a>
+          </div>
+      </div>
+      <div class="col-xs-12 col-sm-5 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+		  <ul class="info">
+			<li id="event-name"><p>Event:</p><h3>Dibecare Openday</h3></li>
+			<li><p>When:</p><h3>30 June 2018</h3></li>
+            <li id="event-location"><p>Where:</p><h3>Dibecare</h3></li>
+		  </ul>
+      </div>
+    </div>
+         <div class="row wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <h3 style="text-align: left;">What we do</h3>
+            <p>Nam tempor velit sed turpis imperdiet vestibulum. In mattis leo ut sapien euismod id feugiat mauris euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus id nulla risus, vel tincidunt
+              turpis. Aliquam a nulla mi, placerat blandit eros. </p>
+            <p>In neque lectus, lobortis a varius a, hendrerit eget dolor. Fusce scelerisque, sem ut viverra sollicitudin, est turpis blandit lacus, in pretium lectus sapien at est. Integer pretium ipsum sit amet dui feugiat vitae dapibus odio eleifend.</p>
+        </div>    
+    </div>
+      
   </div>
 
-	
-	
+  <div class="fancy-bg">
+    <div class="container">
+      <div class="row">
+            <div class="col-sm-3 hidden-xs"><hr></div>
+            <div class="col-sm-6 "><h2>Correlated<br>Location / Service</h2></div>
+            <div class="col-sm-3 hidden-xs"><hr></div>
+        </div>
+      <div class="text-center">
+        <div class="col-md-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <img src="images/services/chess.png" alt="" class="dissolve personal-det">
+          <h4>Chess</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing eil sed deiusmod tempor</p>
+        </div>
+        <div class="col-md-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+          <img src="images/services/teamwork.png" alt="" class="dissolve personal-det">
+          <h4>Teamwork</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing eil sed deiusmod tempor</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer>
     <div class="footer">
