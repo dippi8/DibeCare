@@ -1450,7 +1450,7 @@ hr {
     background-image: url(../images/ptn.png), -webkit-linear-gradient(-45deg, #f7f6f3 10%, #e4e6e2 80%);
     border: solid 1px rgba(0,0,0, 0.1);
     background-color: #f5f4ec;
-    padding-top:15px;
+    padding: 15px;
 }
 
 #paypal-button {  
