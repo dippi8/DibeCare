@@ -406,7 +406,7 @@ ul {
 }
 
 .no-margin {
-  margin: 0;
+  margin: 0 !important;
   padding: 0;
 }
 
@@ -1764,7 +1764,6 @@ a.lightbox-close:after {
     -o-transform:rotate(-45deg);
     transform:rotate(-45deg);
 }
-
 
 .lightbox-target:target {opacity: 1; top: 0; bottom: 0;}
 
