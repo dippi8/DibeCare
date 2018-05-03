@@ -26,15 +26,15 @@
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="navigation">
         <div class="container">
-          <div class="navbar-header">
+          <div class="navbar-header  col-sm-3">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.collapse">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-            <div class="navbar-brand">
-              <a href="index.html"><h1><span>Com</span>pany</h1></a>
+            <div class="navbar-brand col col-xs-5 col-sm-12">
+              <a href="index.html"><img src="images/logo.png"></a>
             </div>
           </div>
 
@@ -42,11 +42,27 @@
             <div class="menu">
               <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation"><a href="index.html">Home</a></li>
-                <li role="presentation"><a href="about.html">About Us</a></li>
-                <li role="presentation"><a href="services.html">Services</a></li>
-                <li role="presentation"><a href="portfolio.html">Portfolio</a></li>
-                <li role="presentation"><a href="blog.html">Blog</a></li>
-                <li role="presentation"><a href="contact.html" class="active">Contact</a></li>
+                <li role="presentation"><a href="about.html">Who we are</a></li>
+                <li role="presentation">
+                    <div class="dropdown-toggle hidden-xs"><a href="services.html">What We Do</a>
+                        <div class="dropdown-menu">
+                            <ul class="nav-tabs">
+                            <li role="presentation"><a class="dropdown-item" href="services.html">Services</a></li>
+                            <li role="presentation"><a class="dropdown-item" href="events.html">Events</a></li>
+                            <li role="presentation"><a class="dropdown-item" href="people.html">People</a></li>
+                            <li role="presentation"><a class="dropdown-item" href="locations.html">Locations</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                <a href="services.html" class="visible-xs" href="#">What We Do</a></li>
+                <li role="presentation"><a class="sub-mobile visible-xs" href="services.html">Services</a></li>
+                <li role="presentation"><a class="sub-mobile visible-xs" href="events.html">Events</a></li>
+                <li role="presentation"><a class="sub-mobile visible-xs" href="people.html">People</a></li>
+                <li role="presentation"><a class="sub-mobile visible-xs" href="locations.html">Locations</a></li>
+                <li role="presentation"><a href="blog.html">News</a></li>
+                <li role="presentation"><a href="helpus.html">Help us</a></li>
+                  <li role="presentation"><a href="faq.html">FAQ</a></li>
+                <li role="presentation"><a class="active" href="contact.html">Contact us</a></li>
               </ul>
             </div>
           </div>
@@ -59,20 +75,59 @@
     <div class="container">
       <div class="breadcrumb">
         <li><a href="index.html">Home</a></li>
-        <li>Contact</li>
+        <li>Contact Us</li>
       </div>
     </div>
   </div>
-
-  <div class="map">
-    <div id="google-map" data-latitude="40.713732" data-longitude="-74.0092704"></div>
+    
+  <div class="row title">
+    <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
+    <div class="col-sm-6 col-md-4"><h2>Where we are</h2></div>
+    <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
   </div>
-
-  <section id="contact-page">
+    
+<section id="contact-page">
+  <div class="row">
+        <div style="width: 100%"><iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=via%20golgi%2C%20milano+(Quartier%20Generale%20DC)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/"></a></iframe></div><br/>
+  </div>
+   
+    <div class="row title">
+        <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
+        <div class="col-sm-6 col-md-4"><h2>How to contact us</h2></div>
+        <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
+    </div>
+<div class="container">
+    <div class="row text-center">
+        <div class="col-md-4">
+          <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <a href="http://www.facebook.com"><i class="fa fa-facebook-square"></i></a>
+            <p>DibeCare</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+            <i class="fa fa-phone"></i>
+            <p>+39 3334445555</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
+            <a href="mailto:info@dibecare.com"><i class="fa fa-envelope-o"></i></a>
+            <p>info@dibecare.com</p>
+          </div>
+        </div>
+    </div>
+</div>
+    
+    <div class="row title">
+        <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
+        <div class="col-sm-6 col-md-4"><h2>Got some question?</h2></div>
+        <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
+    </div>
+  
     <div class="container">
       <div class="center">
-        <h2>Drop Your Message</h2>
-        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Aske everything you want to. We will keep you in touch as soon as possible!</p>
       </div>
       <div class="row contact-wrap">
         <div class="status alert alert-success" style="display: none"></div>
@@ -96,7 +151,7 @@
               <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
               <div class="validation"></div>
             </div>
-            <div class="text-center"><button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Submit Message</button></div>
+            <div class="text-center"><button type="submit" name="submit" class="details" required="required">Submit Message</button></div>
           </form>
         </div>
       </div>

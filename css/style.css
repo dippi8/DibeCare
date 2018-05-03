@@ -1775,3 +1775,7 @@ a.lightbox-close:after {
 .see-all .details{
     margin-top: 20px;
 }
+
+.title {
+    padding: 50px 0;
+}
