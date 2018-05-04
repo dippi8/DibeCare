@@ -1708,10 +1708,10 @@ a.lightbox img {max-height: 550px;max-width: 90%}
     border: 3px solid white;
     box-shadow: 0px 0px 8px rgba(0,0,0,.3);
     box-sizing: border-box;
-    -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 
@@ -1726,10 +1726,10 @@ a.lightbox-close {
     position: absolute;
     top: -80px;
     right: 0;
-    -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 a.lightbox-close:before {
@@ -1778,4 +1778,71 @@ a.lightbox-close:after {
 
 .title {
     padding: 50px 0;
+}
+
+.spoiler {
+	padding: 10px;
+}
+
+
+.spoiler > input + label:after{
+  content: "+";
+  float: right;
+  font-family: monospace;
+  font-weight: bold;
+}
+.spoiler > input:checked + label:after{
+  content: "-";
+  float: right;
+  font-family: monospace;
+  font-weight: bold;}
+.spoiler > input{display:none;
+}
+
+.spoiler > input + label , .spoiler > .spoiler_body{
+  background: #444;
+  padding: 15px;
+  overflow:hidden;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  margin-bottom:  0px;
+  border-radius: 25px;
+  -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.spoiler > input:checked + label{
+	background: #d33865;
+	-moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+	
+}
+
+.spoiler > input + label + .spoiler_body{
+    transform:scale(0);
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.spoiler > input:checked + label + .spoiler_body{
+    transform:scale(1);
+    transform-origin: 50% 50%;
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.spoiler > .spoiler_body{
+  background: #FFF;
+  border: 2px solid #CCC;
 }
