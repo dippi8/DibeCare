@@ -1087,12 +1087,12 @@ a.btn-primary:hover {
 }
 
 .blog_category li a:hover{
-  background:#1BBD36;
+  background:#d33865;
   color: #fff;
 }
 
  .badge:before {
-  border-color: transparent transparent transparent #1BBD36;
+  border-color: transparent transparent transparent #d33865;
   border-style: solid;
   border-width: 10px;
   bottom: -8px;
@@ -1104,7 +1104,7 @@ a.btn-primary:hover {
 }
 
 .badge {
-  background-color: #1BBD36;
+  background-color: #d33865;
   border-radius: 5px;
   color: #fff;
   padding: 8px;
@@ -1126,7 +1126,7 @@ a.btn-primary:hover {
 }
 
 ul.blog_archieve li a:hover{
-	color:#1BBD36;
+	color: #d33865;
 }
 
 .blog_archieve li:first-child {
@@ -1219,7 +1219,7 @@ ul.faq li > div h3 {
 }
 
 .readmore{
-  margin-top: 0;
+  float: left;
 }
 
 .blog .blog-item .blog-content h4 {
@@ -1247,11 +1247,12 @@ ul.faq li > div h3 {
 }
 
 #publish_date {
-  background: #1BBD36;
-  border-bottom: 5px solid #4e4e4e;
-  color: #fff;
+  background: none;
+  color: #d33865;
   padding: 5px 0;
+  border-radius: 5px;
   text-align: center;
+  font-size: 1.8em;
 }
 
 .blog .blog-item .entry-meta > span {
@@ -1271,7 +1272,7 @@ ul.pagination > li > a {
   border-radius: 5px;
   font-size: 16px;
   padding: 5px 14px;
-  color:#1BBD36;
+  color: #444;
 }
 
 ul.pagination > li > a i{
@@ -1281,8 +1282,10 @@ ul.pagination > li > a i{
 
 ul.pagination > li.active > a,
 ul.pagination > li:hover > a {
-  background-color: #1BBD36 !important;
-  border-color: #1BBD36 !important;
+  background-color: #d33865 !important;
+  border-color: #d33865;
+  border-radius: 20px;
+  /* border: none; */
   color: #fff;
 }
 
@@ -1291,6 +1294,7 @@ ul.pagination > li:hover > a {
   background-repeat: no-repeat;
   border-color: #DEDEDE;
   height: 48px;
+  border-radius: 20px;
   outline: medium none;
   box-shadow: none;
 }
