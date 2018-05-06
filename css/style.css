@@ -1825,7 +1825,8 @@ a.lightbox-close:after {
 	
 }
 
-.spoiler > input + label + .spoiler_body{
+.spoiler > input + label + .spoiler_body,
+.more > input + label + .more_body{
     transform:scale(0);
     opacity: 0;
     height: 0;
@@ -1835,7 +1836,8 @@ a.lightbox-close:after {
     -o-transition: all 0.3s ease-in-out;
 }
 
-.spoiler > input:checked + label + .spoiler_body{
+.spoiler > input:checked + label + .spoiler_body,
+.more > input:checked + label + .more_body{
     transform:scale(1);
     transform-origin: 50% 50%;
     height: auto;
@@ -1864,8 +1866,7 @@ a.lightbox-close:after {
     box-sizing: border-box;
     display: block;
 }
-.more > input + label + .more_body{display:none;}
-.more > input:checked + label + .more_body{display: block;}
+
 .more > .more_body{
     background: #FFF;
     border-top: none;
