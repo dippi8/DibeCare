@@ -1858,6 +1858,7 @@ a.lightbox-close:after {
 }
 .more > input:checked + label:after{
     content: "less";
+    
 }
 .more > input{display:none;}
 .more > input + label , .more > .more_body{
@@ -1868,6 +1869,15 @@ a.lightbox-close:after {
 }
 
 .more > .more_body{
-    background: #FFF;
+    background: none;
     border-top: none;
+}
+
+.more > input:checked + label{
+    bottom:0;
+    display: none;
+}
+
+.less {
+    width:150px;
 }
