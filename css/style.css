@@ -1850,3 +1850,23 @@ a.lightbox-close:after {
   background: #FFF;
   border: 2px solid #CCC;
 }
+
+.more > input + label:after{
+    content: "more";
+}
+.more > input:checked + label:after{
+    content: "less";
+}
+.more > input{display:none;}
+.more > input + label , .more > .more_body{
+    padding: 15px 0;
+    overflow:hidden;
+    box-sizing: border-box;
+    display: block;
+}
+.more > input + label + .more_body{display:none;}
+.more > input:checked + label + .more_body{display: block;}
+.more > .more_body{
+    background: #FFF;
+    border-top: none;
+}
