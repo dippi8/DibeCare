@@ -938,7 +938,8 @@ ul.social-network li a {
 }
 
 .portfolio-item {
-	margin: 0;
+	margin-top:  0;
+    margin-bottom: 5%;
 }
 
 .overlay {
@@ -1880,4 +1881,47 @@ a.lightbox-close:after {
 
 .less {
     width:150px;
+}
+
+/* multiple page */
+
+.mul_container {
+  position: relative;
+  width: 100%;
+}
+
+.mul_image {
+  display: block;
+  width: 100%;
+  height: auto;
+  align-content: center;
+}
+
+.mul_overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #d73664;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  
+}
+
+.mul_container:hover .mul_overlay {
+  height: 100%;
+
+}
+
+.mul_text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
