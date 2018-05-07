@@ -1888,6 +1888,7 @@ a.lightbox-close:after {
 .mul_container {
   position: relative;
   width: 100%;
+  margin-top: 30px;
 }
 
 .mul_image {
@@ -1927,4 +1928,8 @@ a.lightbox-close:after {
 
 .clip_circle {
   clip-path: circle();
+}
+
+.padding {
+  padding: 60px 0;
 }
