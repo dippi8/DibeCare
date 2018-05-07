@@ -1925,15 +1925,6 @@ a.lightbox-close:after {
   text-align: center;
 }
 
-.mul_overlay_circle {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #d73664;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
-  border-radius: 50%;
+.clip_circle {
+  clip-path: circle();
 }
