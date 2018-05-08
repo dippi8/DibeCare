@@ -1935,3 +1935,9 @@ a.lightbox-close:after {
 .padding {
   padding: 60px 0;
 }
+
+.logo-slide {
+  max-width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
