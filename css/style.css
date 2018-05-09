@@ -1941,3 +1941,9 @@ a.lightbox-close:after {
   margin-right: auto;
   margin-left: auto;
 }
+
+.clip_rect {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
