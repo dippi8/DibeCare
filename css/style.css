@@ -43,7 +43,8 @@ h4 {
 	font-size: 2em;
 	font-weight: 400;
 	font-family: 'Raleway', serif;
-    text-align: center;
+	text-align: center;
+	line-height: 1.6;
 }
 
 p {
@@ -78,7 +79,7 @@ a:hover {
 
 #breadcrumb {
 	background-color: #5eb1e6;
-	margin-top: 55px;
+	margin-top: 0px;
 }
 
 .breadcrumb {
@@ -258,6 +259,7 @@ ul {
 }
 
 @media (max-width: 768px) {
+	
 	.navbar-brand {
 		padding-top: 6px;
 	}
@@ -331,6 +333,16 @@ ul {
 	.nav-tabs > li > a:hover {
 		border-color: #f3f3f3;
 	}
+	
+	.details {
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+	
+	#main-slider .carousel h2 {
+		text-align: center !important;
+		margin-top: 80px;
+	}
     
 }
 
@@ -359,6 +371,9 @@ ul {
         margin-left: calc(-100vw / 2 + 1170px / 2);
         margin-right: calc(-100vw / 2 + 1170px / 2);
     }
+    #breadcrumb {
+    margin-top: 55px;
+	}
 }
 
 
@@ -1281,15 +1296,15 @@ a.lightbox-close:after {
 }
 
 .spoiler > input + label , .spoiler > .spoiler_body{
-  background: #444;
-  padding: 15px;
-  overflow:hidden;
-  width: 100%;
-  box-sizing: border-box;
-  display: block;
-  margin-bottom:  0px;
-  border-radius: 25px;
-  -moz-transition: all 0.3s ease-in-out;
+    background: #444;
+    padding: 15px;
+    overflow:hidden;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom:  0px;
+    border-radius: 25px;
+    -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
 }
@@ -1359,62 +1374,59 @@ a.lightbox-close:after {
     width:150px;
 }
 
-/* multiple page */
-
 .mul_container {
-  position: relative;
-  width: 100%;
-  margin-top: 30px;
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
 }
 
 .mul_image {
-  display: block;
-  width: 100%;
-  height: auto;
-  align-content: center;
+    display: block;
+    width: 100%;
+    height: auto;
+    align-content: center;
 }
 
 .mul_overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #5eb1e6;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
-  opacity: 0.85;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5eb1e6;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    opacity: 0.85;
 }
 
 .mul_container:hover .mul_overlay {
-  height: 100%;
-
+    height: 100%;
 }
 
 .mul_text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .clip_circle {
-  clip-path: circle();
+    clip-path: circle();
 }
 
 .padding {
-  padding: 60px 0;
+    padding: 60px 0;
 }
 
 .logo-slide {
-  max-width: 40%;
-  margin-right: auto;
-  margin-left: auto;
+    max-width: 40%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .clip_rect {
