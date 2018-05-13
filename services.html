@@ -104,9 +104,10 @@
   </section>
   <!--/#main-slider-->
 
-  <div class="services">     
-      <p class="text-center">Our services are characterized by group experiences, funny moments and formative works.<br>
-        Our staff memebers have long term experience in those fileds and are totally available for further informations about the services.</p>
+
+  <div class="container padding">
+      <h4>Our services are characterized by group experiences, funny moments and formative works.<br>
+        Our staff memebers have long term experience in those fileds and are totally available for further informations about the services.</h4>
       <hr>
     <!-- Control buttons -->
     <div id="myBtnContainer">
@@ -132,13 +133,15 @@
         <!-- CHESS -->
         <div class="filterDiv people loc1">
             <div class="row">
-                <div class="full-width elem-header" style="background-image: url(images/services/teamwork.png)">
-                    <div class="row">
-                        <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
-                        <div class="col-sm-6 col-md-4"><h2>TEAMWORK</h2></div>
-                        <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
+                <a href="service.html">
+                    <div class="full-width elem-header" style="background-image: url(images/services/teamwork.png)">
+                        <div class="row">
+                            <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
+                            <div class="col-sm-6 col-md-4"><h2>TEAMWORK</h2></div>
+                            <div class="col-sm-3 col-md-4 hidden-xs"><hr></div>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="row text-center description">
                 <div class="col-sm-6">
@@ -386,6 +389,96 @@
   <script src="js/jquery.isotope.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/functions.js"></script>
+  <script> 
+        $(document).click(function(){  
+        document.getElementById("myDropdown").classList.remove("show");
+        });
+        /* Clicks within the dropdown won't make
+           it past the dropdown itself */
+        $("#myDropdown").click(function(e){
+          e.stopPropagation();
+        });
+        $("#myDropDownToggle").click(function(e){
+          e.stopPropagation();
+        });
+      
+      function scroll_to(id) {
+            $('html,body').animate({
+            scrollTop: $('#'+id).offset().top - 52
+            },'slow');
+      }
+
+
+        filterSelection("all")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("filterDiv");
+          if (c == "all") c = "";
+          // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) {
+                w3AddClass(x[i], "show");
+            }
+          }
+        }
+
+        // Show filtered elements
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {
+              element.className += " " + arr2[i];
+            }
+          }
+        }
+
+        // Hide elements that are not selected
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1); 
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current control button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+
+        function showDropList() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+
+        function filterFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("myDropdown");
+            a = div.getElementsByTagName("a");
+            for (i = 0; i < a.length; i++) {
+                if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                } else {
+                    a[i].style.display = "none";
+                }
+            }
+        }
+    </script>
 
 </body>
 
