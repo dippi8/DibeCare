@@ -160,7 +160,7 @@ a:hover {
 }
 
 .navbar-brand img {
-    max-width: 100%;
+    max-width: 255px;
 }
 
 .navbar-brand {
@@ -1435,9 +1435,11 @@ a.lightbox-close:after {
 }
 
 .clip_rect {
-    width: 100%;
+    max-width: 300px;
+    margin-left:  auto;
     height: 150px;
     overflow: hidden;
+    margin-right:  auto;
 }
 
 .mul_overlay {
