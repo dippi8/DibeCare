@@ -265,10 +265,11 @@ ul {
         background: -webkit-linear-gradient(bottom, rgba(94,177,230,1) 0%, rgba(94,177,230,0.4) 80%, rgba(94,177,230,0) 100%);
         background: linear-gradient(to top, rgba(94,177,230,1) 0%,rgba(94,177,230,0.4) 80%, rgba(94,177,230,0) 100%);
     }
+    
+    .navbar-brand img {
+        max-width: 180px;
+    }
 	
-	.navbar-brand {
-		padding-top: 6px;
-	}
 	.navbar-brand h1 {
 		margin-top: 0;
 	}
@@ -350,6 +351,10 @@ ul {
 		margin-top: 80px;
 	}
     
+    .breadcrumb {
+        padding: 5px;
+        margin-bottom: 5px;
+    }
 }
 
 @media (min-width: 768px) {
