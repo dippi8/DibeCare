@@ -79,6 +79,11 @@ a:hover {
   color:#333;
 }
 
+.text-center img {
+  margin-left: auto;
+    margin-right: auto;
+}
+
 #breadcrumb {
   background-color: #5eb1e6;
   margin-top: 0px;
@@ -380,6 +385,10 @@ ul {
     .aboutus img {
         float: right;
     }
+     .nose {
+        margin-bottom: 252px;
+        margin-left: 135px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -387,6 +396,13 @@ ul {
         margin-left: calc(-100vw / 2 + 970px / 2);
         margin-right: calc(-100vw / 2 + 970px / 2);
     }
+    
+     .nose{
+    margin-bottom: 298px;
+    margin-left: 163px;
+}
+    
+   
 }
 
 @media (min-width: 1200px) {
@@ -399,6 +415,8 @@ ul {
     #breadcrumb {
     margin-top: 55px;
   }
+    
+   
 }
 
 
@@ -1086,9 +1104,18 @@ padding-bottom: 100px;
 
 .dropdown a:hover {background-color: #ddd}
 
-.excerpt {
-    padding:20%;
+.excerpt-overlay {
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 1%, rgba(255,255,255,1) 84%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,1) 84%,rgba(255,255,255,1) 100%);   
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,1) 84%,rgba(255,255,255,1) 100%);
+    height: 80px;
+    position: relative;
+    margin-top: -80px;
 }
+.excerpt-overlay:after {
+    content: "...";
+}
+
 
 .elem-header {
     margin-bottom: 40px;
@@ -1452,3 +1479,30 @@ a.lightbox-close:after {
     overflow: hidden;
     width: 100%;
 }
+
+
+
+.pulse {
+  filter: drop-shadow(0 0 0 rgba(244,67,54, 0));
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    -moz-filter: drop-shadow(0  0 0 rgba(255, 255, 255, 0.8));
+    filter: drop-shadow(0 0  0 rgba(255, 255, 255, 0.8));
+  }
+  50%{
+  	 -moz-transform:scale(1.1);
+  	transform:scale(1.1);
+  }
+  70% {
+      -moz-filter: drop-shadow(0  0 20px #fff);
+      filter: drop-shadow(0 0  20px  #fff);
+  }
+  100% {
+      -moz-filter: drop-shadow(0 0 0 0 rgba(244,67,54, 0));
+      filter: drop-shadow(0 0 0 0 rgba(244,67,54, 0));
+  }
+}
+
