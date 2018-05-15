@@ -6,6 +6,8 @@ jQuery(function($) {
 			interval: 8000
 		});
 	});
+
+	
 	
 	
 	//Initiat WOW JS
@@ -56,3 +58,8 @@ jQuery(function($) {
 
 });
 
+function scroll_to(id) {
+            $('html,body').animate({
+            scrollTop: $('#'+id).offset().top - 52
+            },'slow');
+      }
