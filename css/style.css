@@ -1437,14 +1437,23 @@ a.lightbox-close:after {
 }
 
 .mul_text {
-    color: white;
-    font-size: 20px;
+    
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.mul_text p{
+  color: white;
+    font-size: 20px;
+}
+
+.event_date, .event_loc{
+  font-size: 15px !important;
+  line-height: 0.7;
 }
 
 .clip_circle {
