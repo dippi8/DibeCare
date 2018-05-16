@@ -221,39 +221,30 @@
         <p>Every donation is really appreciated.</p>
       </div>
 
-      <div id="paypal-button" class="fadeInDown wow"></div>
+        <div class="paypal-button" class="fadeInDown wow"><div id="paypal-button" class="fadeInDown wow"></div></div>
+      
 
       <script>
         paypal.Button.render({
-          env: 'production', // Or 'sandbox',
-          commit: true, // Show a 'Pay Now' button
+          env: 'production', 
+          commit: true, 
           locale: 'en_US',
           style: {
             label: 'paypal',
-            size:  'responsive',    // small | medium | large | responsive
-            shape: 'rect',     // pill | rect
-            color: 'blue',     // gold | blue | silver | black
+            size:  'medium',    
+            shape: 'rect',     
+            color: 'blue',     
             tagline: false    
           },
           payment: function(data, actions) {
-            /* 
-             * Set up the payment here 
-             */
+            
           },
           onAuthorize: function(data, actions) {
-            /* 
-             * Execute the payment here 
-             */
-          },
+                      },
           onCancel: function(data, actions) {
-            /* 
-             * Buyer cancelled the payment 
-             */
-          },
+                      },
           onError: function(err) {
-            /* 
-             * An error occurred during the transaction 
-             */
+            
           }
          }, '#paypal-button');
       </script>

@@ -998,8 +998,8 @@ hr {
     padding: 15px;
 }
 
-#paypal-button {  
-    padding: 50px;
+.paypal-button {  
+    padding: 50px 0;
     width: 40%;
     margin-right: auto;
     margin-left: auto;
@@ -1483,7 +1483,6 @@ a.lightbox-close:after {
     overflow: hidden;
     width: 100%;
 }
-
 
 
 .pulse {
