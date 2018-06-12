@@ -1,0 +1,53 @@
+[ 
+  {
+    "id": 0,
+    "first-name": "Alessandro",
+    "last-name": "Brucato",
+    "nickname": "Bruce",
+    "description": "Hi, I am Bruce! I focus on helping our guys to develop my favourite skill: creativity! I accomplish this through Table Games, which is the activity I lead here. During game sessions our guys always face new challenges and are pushed to find creative solutions to solve problems.<br><br>We have a lot of different games! In my curriculum you can see that I created several table games, some of which are officialy produced by italian factories! I love games and what i like most is observing how people approach them in a competitive way. With me your guys will never get bored ;)",
+    "birthdate": "9 March 1994",
+    "experience": 8,
+    "assisted": "250+",
+    "cv-url": "cv/AlessandroBrucato_CV-eng.pdf"
+  },
+  {
+    "id": 1,
+    "first-name": "Amedeo",
+    "last-name": "Cuttica",
+    "nickname": "Deo",
+    "description": "Hi, I am Deo! Everyone here knows me for my green thumb, I am the wizard of the plants. If your guy is interested or simply curious about plants, flowers or gardening in general, I will be pleased to introduce him/her to this fantastic world.<br><br>Also, I have a huge passion for books and stories in general. I have always loved reading, listening and also wrting them, since I was young. During the Group Reading activity our guys listen to stories read by me (or occasionally by other kids) and at the end of the session they can comment, ask questions and interact each other in a constructive way. We have a huge variety of books genres, and sometimes our guys can propose what to read together.",
+    "experience": 4,
+    "assisted": "100+",
+    "cv-url": "cv/amedeo_CV.pdf"
+  },
+  {
+    "id": 2,
+    "first-name": "Roberto",
+    "last-name": "Di bella",
+    "nickname": "Dibe",
+    "description": "Hi, I am Dibe! I am the director of Dibecare and together with the staff I put all my effort to make this world a wonderful place to have fun, learn, build new relationships and work together. I have the honor to lead a team of awesome people, whom I will never thank enough for the energy they spend daily to make this dream a reality.<br><br>I supervise several activities here at Dibecare, among which Gardening, Table Games and Theater. I am always satisfied by the huge strides our guys take everyday, which prove how well they grow together.",
+    "experience": 6,
+    "assisted": "150+",
+    "cv-url": "cv/dibe_CV.pdf"
+  },
+  {
+    "id": 3,
+    "first-name": "Matteo",
+    "last-name": "Di Pierro",
+    "nickname": "Dippi",
+    "description": "Hi, I am Dippi! My main job is to make your guys becoming true athletes, and if they already are, I will bring them to the top! Sport is the best way to overstep physical obstacles while having fun. In our Arena you can dream big.<br><br>We do many sports and at the end of the year we organize a tournament for each one. Passion and wish to have fun drive us to obtain unbelievable results, that make me proud every day.<br><br>Also, I help in the Teamwork activity, by guiding the teams to develop their projects and enjoy working together and helping who needs it.",
+    "experience": 7,
+    "assisted": "200+",
+    "cv-url": "cv/cv_MatteoDiPierro.pdf"
+  },
+  {
+    "id": 4,
+    "first-name": "Lorenzo",
+    "last-name": "Cannone",
+    "nickname": "Lollo",
+    "description": "Hi, I am Lollo! My tasks regard the activity I like most: teamwork. I love seeing my guys cooperate to reach the same goal and I'm always available to help them to face every obstacle they may encounter. Solving problems and overcoming difficulties together are priceless resources, not only here but everywhere!<br><br>I have been helping people working together since I was young.<br><br>My first experiences date back to the holidays organized by my oratory, where I was a children entertainer. In my curriculum you can see many other similar experiences I did from that time.<br><br>Here at Dibecare I am the supervisor of all the projects that are developed by our guys during my activity. Some of them are exposed in certain parts of the campus, making it even more beautiful than how it already is.<br><br>To me there is no better feeling than the satisfaction to see my guys sharing together the final result of their hard work.",
+    "experience": 8,
+    "assisted": "200+",
+    "cv-url": "cv/lore_CV.pdf"
+  }
+]

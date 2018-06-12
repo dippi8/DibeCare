@@ -10,7 +10,7 @@ function addRow(person) {
     `
         <!-- singolo elemento -->
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <a href="../pages/${person.name}.html"><div class="mul_container clip_circle">
+            <a href="${person.name}.html"><div class="mul_container clip_circle">
               <img src="../images/people/${person.name}-featured.png" alt="${person.name}" class="mul_image">
               <div class="mul_overlay">
                 <div class="mul_text">${person.name}</div>
@@ -36,11 +36,11 @@ let sortby = "none";
 
 function setSort(x) {
   sortby = x;
-  updatePetsList();
+  updatePeopleList());
 }
 
 function updatePeopleList() {
-  fetch(`../people?start=${start}&limit=${count}&sort=${sortby}`)
+  fetch(`../../people?start=${start}&limit=${count}&sort=${sortby}`)
     .then(function(response) {
       return response.json();
     })
