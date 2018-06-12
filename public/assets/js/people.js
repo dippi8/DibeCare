@@ -36,7 +36,7 @@ let sortby = "none";
 
 function setSort(x) {
   sortby = x;
-  updatePeopleList());
+  updatePeopleList();
 }
 
 function updatePeopleList() {

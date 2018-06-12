@@ -255,7 +255,7 @@ let serverPort = process.env.PORT || 5000;
 
 //let servicesList = require("other/db/servicesdata.json");
 //let locationsList = require("other/db/locationsdata.json");
-let peopleList = require("./other/db/pepoledata.json");
+let peopleList = require("other/db/peopledata.json");
 //let eventsList = require("other/db/eventsdata.json");
 //let servicePerson = require("other/db/worksrel.json");
 //let serviceLocation = require("other/db/offersrel.json");
