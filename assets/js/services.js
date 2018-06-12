@@ -1,17 +1,14 @@
 function clearTable() {
-    element = $("peopleRow")
-    while (element.firstChild) { 
-        element.removeChild(element.firstChild);
-    }
+  $("#myrows").find("tr").remove();
 }
 
 function addRow(person) {
-  $("peopleRow").append(
+  $("#myrows").append(
     `
         <!-- singolo elemento -->
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <a href="../pages/${person.name}.html"><div class="mul_container clip_circle">
-              <img src="../images/people/${person.name}-featured.png" alt="${person.name}" class="mul_image">
+            <a href="${person.name}.html"><div class="mul_container clip_circle">
+              <img src="images/people/${person.name}-featured.png" alt="${person.name}" class="mul_image">
               <div class="mul_overlay">
                 <div class="mul_text">${person.name}</div>
               </div>
@@ -40,7 +37,7 @@ function setSort(x) {
 }
 
 function updatePeopleList() {
-  fetch(`../people?start=${start}&limit=${count}&sort=${sortby}`)
+  fetch(`/pets?start=${start}&limit=${count}&sort=${sortby}`)
     .then(function(response) {
       return response.json();
     })

@@ -141,7 +141,7 @@ function initDb() {
               table.string("last-name");
               table.string("nickname");
               table.string("description");
-              table.date("birthdate");
+              table.string("birthdate");
               table.integer("experience");
               table.integer("assisted");
               table.string("cv-url");
@@ -253,14 +253,14 @@ const _ = require("lodash");
 
 let serverPort = process.env.PORT || 5000;
 
-let servicesList = require("./servicesdata.json");
-let locationsList = require("./locationsdata.json");
-let peopleList = require("./pepoledata.json");
-let eventsList = require("./eventsdata.json");
-let servicePerson = require("./worksrel.json");
-let serviceLocation = require("./offersrel.json");
-let eventLocation = require("./hostsrel.json");
-let locationSlide = require("./picturesofrel.json");
+let servicesList = require("other/db/servicesdata.json");
+let locationsList = require("other/db/locationsdata.json");
+let peopleList = require("other/db/pepoledata.json");
+let eventsList = require("other/db/eventsdata.json");
+let servicePerson = require("other/db/worksrel.json");
+let serviceLocation = require("other/db/offersrel.json");
+let eventLocation = require("other/db/hostsrel.json");
+let locationSlide = require("other/db/picturesofrel.json");
 
 
 app.use(express.static(__dirname + "/public"));
