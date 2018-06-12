@@ -42,7 +42,7 @@ h3 {
 }
 
 h4 {
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 400;
   font-family: 'Raleway', serif;
   text-align: center;
@@ -63,6 +63,10 @@ a {
     -webkit-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out;
     outline: none;
+}
+
+.blocked {
+    cursor: not-allowed;
 }
 
 a:hover {
@@ -274,7 +278,7 @@ ul {
     }
     
     .mul_overlay {
-        height: 50%;
+        height: 100%;
         background: -webkit-linear-gradient(bottom, rgba(94,177,230,1) 0%, rgba(94,177,230,0.4) 80%, rgba(94,177,230,0) 100%);
         background: linear-gradient(to top, rgba(94,177,230,1) 0%,rgba(94,177,230,0.4) 80%, rgba(94,177,230,0) 100%);
     }
@@ -1445,7 +1449,7 @@ a.lightbox-close:after {
 
 .mul_text p{
   color: white;
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .event_date, .event_loc{
@@ -1458,7 +1462,7 @@ a.lightbox-close:after {
 }
 
 .padding {
-    padding: 60px 0;
+    padding: 60px 20px;
 }
 
 .logo-slide {
